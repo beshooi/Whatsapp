@@ -1,0 +1,142 @@
+:root{
+--light-green:rgb(33, 170, 33);
+--dark-color:#222020;
+--light-black:rgb(67, 62, 62);
+}
+body{
+    background-color: var(--dark-color);
+}
+
+.nav{
+    background-color: var(--dark-color);
+}
+
+.col-1{
+    background-color: var(--dark-color);
+
+}
+.focus{
+    background-color: var(--light-black);
+    border-left: solid 3px var(--light-green);
+}
+
+.chat-dots::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--light-green);
+    right: 15px;
+    top: 5px;
+    border-radius: 50%;
+}
+.setting{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 25%;
+    margin-left: 5px;
+    width: 54px;
+    height: 40px;
+    border-bottom: solid 3px var(--light-green);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.col-lg-4{
+    background-color:var(--light-black) ;
+    border-radius: 10px;
+}
+.k::placeholder{
+    color: white;
+    padding-left: 10px;
+}
+
+.k{
+outline: none !important;
+border-radius: 5px;
+height: 35px;
+}
+
+.fa-plus{
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    padding-left: 3px;
+    padding-top: 2px;
+    border-radius: 50%;
+    position: relative;
+    top: 20%;
+    right: 20%;
+}
+
+.state-imgg::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(88 192 88);
+    border-radius: 50%;
+
+}
+.chat:hover{
+    border-bottom: var(--dark-color) 2px solid ;
+
+}
+.col-lg-7{
+height: 110vh;
+border-radius: 10px;
+background-color: var(--light-black);
+margin-left: 5px;
+}
+
+@media(max-width:1100px) {
+    .col-lg-7{
+        width: 55% !important;
+    }
+}
+
+@media (max-width:992px) {
+    .fa-magnifying-glass{
+left: 90% !important;
+    }
+
+    .col-lg-7{
+        width: 100% !important;
+    }
+
+}
+@media (max-width:952px) {
+    .exit{
+        margin-right: -20px;
+    }
+    .col-1{
+        display: contents;
+    }
+    .chat-dots{
+        margin: 0 !important;
+        margin-left: 15px !important;
+    }
+    .state-dots{
+        margin: 0 !important;
+    }
+    .col-lg-4{
+        width: 100% !important;
+        height: 125vh !important;
+        margin-left: 11px;
+    }
+    .col-lg-7{
+        width: 100% !important;
+        margin-top: 9px !important;
+        margin-left: 11px;
+    }
+    .setting{
+        margin: 0;
+        margin-left: 10px;
+        bottom: unset;
+        left: 85%;
+    }
+}
